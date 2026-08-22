@@ -1,0 +1,39 @@
+/* Nordic — pale ice, birch white, muted steel blue */
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Source+Sans+3:wght@400;500;600&display=swap");
+
+:root {
+  --bg: #f4f7f9;
+  --bg-dark: #2c3e50;
+  --surface: #ffffff;
+  --text: #2c3e50;
+  --text-muted: #6c7a89;
+  --accent: #5b7c99;
+  --accent-light: #7a9bb8;
+  --gold: #8faec5;
+  --border: rgba(44, 62, 80, 0.1);
+  --shadow: 0 4px 20px rgba(44, 62, 80, 0.06);
+  --shadow-lg: 0 16px 48px rgba(44, 62, 80, 0.1);
+  --radius: 4px;
+  --radius-pill: 4px;
+  --font-display: "Libre Baskerville", Georgia, serif;
+  --font-body: "Source Sans 3", system-ui, sans-serif;
+  --header-bg: rgba(244, 247, 249, 0.92);
+  --hero-overlay: linear-gradient(to top, rgba(44, 62, 80, 0.82) 0%, rgba(44, 62, 80, 0.35) 45%, rgba(91, 124, 153, 0.15) 100%);
+  --highlight-icon-bg: rgba(91, 124, 153, 0.1);
+  --cta-shadow: 0 8px 24px rgba(91, 124, 153, 0.3);
+  --contact-gradient: linear-gradient(135deg, #5b7c99 0%, #2c3e50 100%);
+  --gallery-placeholder: #e8edf1;
+  --feature-card-bg: rgba(255, 255, 255, 0.06);
+  --feature-card-border: rgba(255, 255, 255, 0.12);
+  --feature-text-muted: rgba(255, 255, 255, 0.65);
+}
+
+.highlight,
+.location-item,
+.feature-card {
+  box-shadow: none;
+}
+
+.highlight:hover {
+  box-shadow: var(--shadow);
+}

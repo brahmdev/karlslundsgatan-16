@@ -1,0 +1,43 @@
+/* Midnight — deep navy, cool silver, teal accents */
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap");
+
+:root {
+  --bg: #0f1419;
+  --bg-dark: #06080b;
+  --surface: #1a222d;
+  --text: #e8ecf0;
+  --text-muted: #8b98a8;
+  --accent: #4ecdc4;
+  --accent-light: #7eddd6;
+  --gold: #4ecdc4;
+  --border: rgba(255, 255, 255, 0.08);
+  --shadow: 0 4px 24px rgba(0, 0, 0, 0.35);
+  --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.5);
+  --radius: 8px;
+  --font-display: "Cormorant Garamond", Georgia, serif;
+  --font-body: "Inter", system-ui, sans-serif;
+  --header-bg: rgba(15, 20, 25, 0.9);
+  --hero-overlay: linear-gradient(to top, rgba(6, 8, 11, 0.92) 0%, rgba(15, 20, 25, 0.55) 50%, rgba(15, 20, 25, 0.2) 100%);
+  --highlight-icon-bg: rgba(78, 205, 196, 0.12);
+  --cta-shadow: 0 8px 32px rgba(78, 205, 196, 0.25);
+  --contact-gradient: linear-gradient(135deg, #1a222d 0%, #0f1419 100%);
+  --gallery-placeholder: #1a222d;
+  --feature-card-bg: rgba(255, 255, 255, 0.03);
+  --feature-card-border: rgba(255, 255, 255, 0.06);
+  --feature-text-muted: rgba(255, 255, 255, 0.55);
+  --contact-btn-bg: #4ecdc4;
+  --contact-btn-color: #0f1419;
+}
+
+body {
+  --hero-cta-color: #0f1419;
+}
+
+.features-section {
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.gallery-tab.active {
+  color: #0f1419;
+}

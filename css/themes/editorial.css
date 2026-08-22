@@ -1,0 +1,45 @@
+/* Editorial — high-contrast black & white, sharp red accent */
+@import url("https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600;6..72,700&display=swap");
+
+:root {
+  --bg: #ffffff;
+  --bg-dark: #111111;
+  --surface: #ffffff;
+  --text: #111111;
+  --text-muted: #666666;
+  --accent: #d62828;
+  --accent-light: #e84545;
+  --gold: #d62828;
+  --border: rgba(0, 0, 0, 0.12);
+  --shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 12px 40px rgba(0, 0, 0, 0.1);
+  --radius: 0;
+  --radius-pill: 0;
+  --font-display: "Newsreader", Georgia, serif;
+  --font-body: "Newsreader", Georgia, serif;
+  --header-bg: rgba(255, 255, 255, 0.95);
+  --hero-overlay: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.45) 50%, rgba(0, 0, 0, 0.1) 100%);
+  --highlight-icon-bg: rgba(214, 40, 40, 0.08);
+  --cta-shadow: 0 6px 20px rgba(214, 40, 40, 0.3);
+  --contact-gradient: linear-gradient(135deg, #111111 0%, #333333 100%);
+  --gallery-placeholder: #f0f0f0;
+  --feature-card-bg: rgba(255, 255, 255, 0.04);
+  --feature-card-border: rgba(255, 255, 255, 0.12);
+  --feature-text-muted: rgba(255, 255, 255, 0.6);
+  --contact-btn-bg: #d62828;
+  --contact-btn-color: #ffffff;
+}
+
+.hero h1,
+.section-title,
+.stat-value {
+  letter-spacing: -0.02em;
+}
+
+.hero-badge {
+  border-radius: 0;
+}
+
+.gallery-tab.active {
+  border-radius: 0;
+}

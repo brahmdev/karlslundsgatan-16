@@ -1,0 +1,28 @@
+/* Classic — warm cream, sage & gold (original theme) */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600&family=Playfair+Display:wght@500;600;700&display=swap");
+
+:root {
+  --bg: #faf8f5;
+  --bg-dark: #1a1a18;
+  --surface: #ffffff;
+  --text: #2c2c2a;
+  --text-muted: #6b6b67;
+  --accent: #3d5a4c;
+  --accent-light: #5a7d6a;
+  --gold: #b8956a;
+  --border: rgba(44, 44, 42, 0.08);
+  --shadow: 0 4px 24px rgba(26, 26, 24, 0.08);
+  --shadow-lg: 0 20px 60px rgba(26, 26, 24, 0.15);
+  --radius: 12px;
+  --font-display: "Playfair Display", Georgia, serif;
+  --font-body: "DM Sans", system-ui, sans-serif;
+  --header-bg: rgba(250, 248, 245, 0.85);
+  --hero-overlay: linear-gradient(to top, rgba(26, 26, 24, 0.85) 0%, rgba(26, 26, 24, 0.4) 45%, rgba(26, 26, 24, 0.15) 100%);
+  --highlight-icon-bg: rgba(61, 90, 76, 0.08);
+  --cta-shadow: 0 8px 24px rgba(184, 149, 106, 0.4);
+  --contact-gradient: linear-gradient(135deg, #3d5a4c 0%, #2a4035 100%);
+  --gallery-placeholder: #eee;
+  --feature-card-bg: rgba(255, 255, 255, 0.04);
+  --feature-card-border: rgba(255, 255, 255, 0.08);
+  --feature-text-muted: rgba(255, 255, 255, 0.6);
+}

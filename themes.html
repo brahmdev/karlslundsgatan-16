@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Choose a theme · Karlslundsgatan 16</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "DM Sans", system-ui, sans-serif;
+      background: #faf8f5;
+      color: #2c2c2a;
+      min-height: 100vh;
+      padding: 3rem 1.5rem;
+    }
+    .wrap { max-width: 960px; margin: 0 auto; }
+    h1 {
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: clamp(1.75rem, 4vw, 2.5rem);
+      margin-bottom: 0.5rem;
+    }
+    .subtitle {
+      color: #6b6b67;
+      margin-bottom: 2.5rem;
+      max-width: 520px;
+      line-height: 1.6;
+    }
+    .back {
+      display: inline-block;
+      margin-bottom: 2rem;
+      font-size: 0.875rem;
+      color: #3d5a4c;
+      text-decoration: none;
+    }
+    .back:hover { text-decoration: underline; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 1.25rem;
+    }
+    .card {
+      display: block;
+      background: #fff;
+      border: 1px solid rgba(44, 44, 42, 0.08);
+      border-radius: 12px;
+      overflow: hidden;
+      text-decoration: none;
+      color: inherit;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 32px rgba(26, 26, 24, 0.1);
+    }
+    .swatches {
+      display: flex;
+      height: 80px;
+    }
+    .swatches span { flex: 1; }
+    .card-body { padding: 1.25rem; }
+    .card-body h2 {
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: 1.15rem;
+      margin-bottom: 0.35rem;
+    }
+    .card-body p {
+      font-size: 0.85rem;
+      color: #6b6b67;
+      line-height: 1.5;
+    }
+    .badge {
+      display: inline-block;
+      margin-top: 0.75rem;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: #3d5a4c;
+      background: rgba(61, 90, 76, 0.08);
+      padding: 0.25rem 0.6rem;
+      border-radius: 100px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="index.html">← Back to listing</a>
+    <h1>Choose a theme</h1>
+    <p class="subtitle">Five visual styles for the same listing. Classic is the original — the others are alternate looks you can switch to anytime.</p>
+
+    <div class="grid">
+      <a class="card" href="index.html">
+        <div class="swatches">
+          <span style="background:#faf8f5"></span>
+          <span style="background:#3d5a4c"></span>
+          <span style="background:#b8956a"></span>
+        </div>
+        <div class="card-body">
+          <h2>Classic</h2>
+          <p>Warm cream, sage green & gold. The original theme.</p>
+          <span class="badge">Default</span>
+        </div>
+      </a>
+
+      <a class="card" href="index.html?theme=midnight">
+        <div class="swatches">
+          <span style="background:#0f1419"></span>
+          <span style="background:#4ecdc4"></span>
+          <span style="background:#1a222d"></span>
+        </div>
+        <div class="card-body">
+          <h2>Midnight</h2>
+          <p>Deep navy background with cool teal accents. Dramatic and modern.</p>
+        </div>
+      </a>
+
+      <a class="card" href="index.html?theme=nordic">
+        <div class="swatches">
+          <span style="background:#f4f7f9"></span>
+          <span style="background:#5b7c99"></span>
+          <span style="background:#2c3e50"></span>
+        </div>
+        <div class="card-body">
+          <h2>Nordic</h2>
+          <p>Pale ice tones and muted steel blue. Clean Scandinavian feel.</p>
+        </div>
+      </a>
+
+      <a class="card" href="index.html?theme=sunset">
+        <div class="swatches">
+          <span style="background:#fdf6f0"></span>
+          <span style="background:#c45c3e"></span>
+          <span style="background:#3d1f2b"></span>
+        </div>
+        <div class="card-body">
+          <h2>Sunset</h2>
+          <p>Terracotta and plum with golden-hour warmth. Matches the views.</p>
+        </div>
+      </a>
+
+      <a class="card" href="index.html?theme=editorial">
+        <div class="swatches">
+          <span style="background:#ffffff"></span>
+          <span style="background:#d62828"></span>
+          <span style="background:#111111"></span>
+        </div>
+        <div class="card-body">
+          <h2>Editorial</h2>
+          <p>Sharp black-and-white with a red accent. Magazine-style layout.</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</body>
+</html>
