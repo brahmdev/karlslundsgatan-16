@@ -13,8 +13,20 @@
 <body>
 
   <header class="site-header">
-    <a href="#" class="logo">Karlslundsgatan 16</a>
-    <button class="nav-toggle" aria-label="Menu">☰</button>
+    <a href="#" class="logo">
+      <span class="logo-line">
+        <span class="logo-name">Karlslundsgatan</span>
+        <span class="logo-number">16</span>
+      </span>
+      <span class="logo-tag">Södertälje · 9th floor</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+      <span class="nav-toggle-icon" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+    </button>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#features">Upgrades</a></li>
@@ -29,9 +41,12 @@
   </header>
 
   <section class="hero">
-    <img class="hero-bg" src="images/outside-view/north-view/summer/IMG_20210522_204227.jpg" alt="North-facing summer sunset view from the apartment">
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
+    <div class="hero-media">
+      <div class="hero-visual">
+        <img class="hero-bg" src="images/outside-view/north-view/summer/IMG_20210522_204227.jpg" alt="North-facing summer sunset view from the apartment">
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="hero-content">
       <span class="hero-badge">For sale · Private listing</span>
       <h1>Your next home awaits<br>on the 9th floor</h1>
       <p class="hero-address">Karlslundsgatan 16, Södertälje 151 35, Sweden</p>
@@ -54,6 +69,7 @@
         </div>
       </div>
       <a href="#contact" class="hero-cta">Get in touch →</a>
+      </div>
     </div>
   </section>
 
@@ -133,6 +149,16 @@
       <p class="section-label">Photo tour</p>
       <h2 class="section-title">Explore every room</h2>
       <p class="section-intro">Browse photos by room and season. Click any image to view full size.</p>
+
+      <a class="mobile-photos-link" href="https://drive.google.com/drive/folders/13DOQb74V2OnRLPlrtR4my4WZX8BO8tBi?usp=sharing" target="_blank" rel="noopener">
+        <span class="mobile-photos-icon">📱</span>
+        <span class="mobile-photos-text">
+          <strong>Photos on your phone?</strong>
+          <span>Open the full photo folder in Google Drive</span>
+        </span>
+        <span class="mobile-photos-arrow">→</span>
+      </a>
+
       <nav class="gallery-nav" id="gallery-nav"></nav>
       <div id="gallery-panels"></div>
     </div>
