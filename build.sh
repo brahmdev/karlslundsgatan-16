@@ -90,18 +90,21 @@ process_folder() {
     rel="${file#$ROOT/}"
     rel_dir="$(dirname "$rel")"
     basename="$(basename "$file")"
+    if [ "$basename" = "IMG_2388.HEIC" ] || [ "$basename" = "IMG_2388.jpg" ]; then
+      continue
+    fi
     convert_image "$file" "$rel_dir" "$basename" "$title"
   done < <(find "$src_dir" -type f \( -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.heic" -o -iname "*.heif" -o -iname "*.png" \) ! -name ".DS_Store" -print0 | sort -z)
 
   close_category
 }
 
-process_folder "Outside view" "views" "Views" "Panoramic open views from the 9th floor – east and north"
+process_folder "Hallway" "hallway" "Hallway" "Welcoming entrance with fresh paint throughout"
 process_folder "Living room" "living-room" "Living Room" "Spacious living area with new flooring and fresh paint"
 process_folder "Kitchen" "kitchen" "Kitchen" "Brand new kitchen with modern finishes"
-process_folder "Hallway" "hallway" "Hallway" "Welcoming entrance with fresh paint throughout"
 process_folder "Bedroom-1" "bedroom-1" "Bedroom 1" "Comfortable bedroom with natural light"
 process_folder "Bedroom-2" "bedroom-2" "Bedroom 2" "Versatile second bedroom"
+process_folder "Outside view" "views" "Views" "Panoramic open views from the 9th floor – east and north"
 
 if [ -z "$HERO_PATH" ]; then
   HERO_PATH="images/outside-view/north-view/summer/IMG_20210522_204227.jpg"

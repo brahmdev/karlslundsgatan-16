@@ -29,8 +29,8 @@
     </button>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
-      <li><a href="#features">Upgrades</a></li>
       <li><a href="#gallery">Photos</a></li>
+      <li><a href="#features">Upgrades</a></li>
       <li><a href="#location">Location</a></li>
       <li><a href="#contact">Contact</a></li>
       <li class="theme-switcher">
@@ -110,45 +110,11 @@
     </div>
   </section>
 
-  <section id="features" class="features-section">
-    <div class="container">
-      <p class="section-label">Recent upgrades</p>
-      <h2 class="section-title">Everything has been taken care of</h2>
-      <p class="section-intro">Recent improvements mean you can unpack and settle in from day one.</p>
-      <div class="features-grid">
-        <div class="feature-card">
-          <h3>Brand new kitchen</h3>
-          <p>Modern kitchen with new fittings — ready for everyday cooking and entertaining.</p>
-        </div>
-        <div class="feature-card">
-          <h3>New flooring</h3>
-          <p>Fresh flooring in the living room and kitchen for a clean, cohesive feel.</p>
-        </div>
-        <div class="feature-card">
-          <h3>Fresh paint throughout</h3>
-          <p>The entire apartment has been freshly painted — bright, clean, and welcoming.</p>
-        </div>
-        <div class="feature-card">
-          <h3>Bathroom updates</h3>
-          <p>Minor updates completed. Professional bathroom photos coming soon — ask for a viewing!</p>
-        </div>
-        <div class="feature-card">
-          <h3>Triple-glazed windows</h3>
-          <p>Installed by the housing association (2021–2022) — quiet, warm, and energy-efficient.</p>
-        </div>
-        <div class="feature-card">
-          <h3>9th floor living</h3>
-          <p>Elevated position with unobstructed views — a rare combination of light and privacy.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <section id="gallery">
     <div class="container">
       <p class="section-label">Photo tour</p>
       <h2 class="section-title">Explore every room</h2>
-      <p class="section-intro">Browse photos by room and season. Click any image to view full size.</p>
+      <p class="section-intro">Browse photos room by room — same flow as a typical Hemnet listing. Tap a room, then open any photo full screen.</p>
 
       <a class="mobile-photos-link" href="https://drive.google.com/drive/folders/13DOQb74V2OnRLPlrtR4my4WZX8BO8tBi?usp=sharing" target="_blank" rel="noopener">
         <span class="mobile-photos-icon">📱</span>
@@ -158,9 +124,110 @@
         </span>
         <span class="mobile-photos-arrow">→</span>
       </a>
+    </div>
 
-      <nav class="gallery-nav" id="gallery-nav"></nav>
+    <div class="gallery-filters-sticky">
+      <div class="container">
+        <nav class="gallery-nav" id="gallery-nav" aria-label="Photo rooms"></nav>
+      </div>
+    </div>
+
+    <div class="container">
       <div id="gallery-panels"></div>
+
+      <div class="gallery-filters-bottom">
+        <p class="gallery-filters-hint">Jump to another room</p>
+        <nav class="gallery-nav" id="gallery-nav-bottom" aria-label="Photo rooms (bottom)"></nav>
+      </div>
+    </div>
+  </section>
+
+  <section id="features" class="features-section">
+    <div class="container">
+      <div class="features-head">
+        <div>
+          <p class="section-label">Recent upgrades</p>
+          <h2 class="section-title">Everything has been refreshed with a cleaner, modern finish</h2>
+        </div>
+        <p class="section-intro">A move-in-ready home with recent updates across the spaces that matter most.</p>
+      </div>
+      <div class="upgrade-mosaic">
+        <article class="upgrade upgrade-hero">
+          <img src="images/kitchen/with-kitchen-lights/thumbs/IMG_2412.jpg" alt="Brand new kitchen" loading="lazy">
+          <div class="upgrade-shade"></div>
+          <div class="upgrade-copy">
+            <span class="upgrade-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M4 10h16v10H4V10Zm2 0V7a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v3M8 14h2M14 14h2" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+            </span>
+            <p class="upgrade-kicker">01 · Kitchen</p>
+            <h3>Brand new kitchen</h3>
+            <p>New cabinetry and finishes — ready for everyday cooking from day one.</p>
+          </div>
+        </article>
+
+        <article class="upgrade">
+          <img src="images/living-room/thumbs/IMG_2432.jpg" alt="New flooring in the living room" loading="lazy">
+          <div class="upgrade-shade"></div>
+          <div class="upgrade-copy">
+            <span class="upgrade-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M3 7h18M3 12h18M3 17h18M8 7v10M16 7v10" stroke="currentColor" stroke-width="1.6"/></svg>
+            </span>
+            <p class="upgrade-kicker">02 · Flooring</p>
+            <h3>New flooring</h3>
+            <p>Living room and kitchen, one continuous look.</p>
+          </div>
+        </article>
+
+        <article class="upgrade">
+          <img src="images/hallway/thumbs/IMG_2394.jpg" alt="Fresh paint in the hallway" loading="lazy">
+          <div class="upgrade-shade"></div>
+          <div class="upgrade-copy">
+            <span class="upgrade-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M7 14l7-7 3 3-7 7H7v-3Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M14 7l2.5-2.5a1.8 1.8 0 0 1 2.5 2.5L16.5 9.5" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+            </span>
+            <p class="upgrade-kicker">03 · Interior</p>
+            <h3>Fresh paint throughout</h3>
+            <p>Bright, clean walls in every room.</p>
+          </div>
+        </article>
+
+        <article class="upgrade upgrade-soon">
+          <div class="upgrade-copy">
+            <span class="upgrade-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M7 4h10M12 4v4M6 20h12M8 8h8v4H8V8Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9 12v8M15 12v8" stroke="currentColor" stroke-width="1.6"/></svg>
+            </span>
+            <p class="upgrade-kicker">04 · Bathroom</p>
+            <h3>Bathroom updates</h3>
+            <p>Minor updates done. Photos coming soon — ask for a viewing.</p>
+          </div>
+        </article>
+
+        <article class="upgrade">
+          <img src="images/living-room/thumbs/IMG_2440.jpg" alt="Triple-glazed windows in the living room" loading="lazy">
+          <div class="upgrade-shade"></div>
+          <div class="upgrade-copy">
+            <span class="upgrade-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M5 4h14v16H5V4Zm7 0v16M5 12h14" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+            </span>
+            <p class="upgrade-kicker">05 · Comfort</p>
+            <h3>Triple-glazed windows</h3>
+            <p>Association install, 2021–2022. Quiet and warm.</p>
+          </div>
+        </article>
+
+        <article class="upgrade upgrade-wide">
+          <img src="images/outside-view/north-view/summer/thumbs/IMG_20210522_204227.jpg" alt="Open views from the 9th floor" loading="lazy">
+          <div class="upgrade-shade"></div>
+          <div class="upgrade-copy">
+            <span class="upgrade-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M3 16l5-5 4 3 4-6 5 8H3Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="8" cy="7" r="1.6" stroke="currentColor" stroke-width="1.6"/></svg>
+            </span>
+            <p class="upgrade-kicker">06 · Position</p>
+            <h3>9th floor living</h3>
+            <p>Open views from two sides — light, sky, and privacy.</p>
+          </div>
+        </article>
+      </div>
     </div>
   </section>
 
