@@ -1,0 +1,214 @@
+/* Fastighetsbyrån — listing-page inspired: cream yellow, brand orange, brown text */
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Source+Sans+3:wght@400;500;600;700&display=swap");
+
+:root {
+  --bg: #fdf6ee;
+  --bg-dark: #512b2b;
+  --surface: #ffffff;
+  --text: #512b2b;
+  --text-muted: #856b6b;
+  --accent: #ff5f00;
+  --accent-light: #f07000;
+  --gold: #fb4f00;
+  --border: rgba(81, 43, 43, 0.12);
+  --shadow: 0 4px 20px rgba(81, 43, 43, 0.08);
+  --shadow-lg: 0 16px 48px rgba(81, 43, 43, 0.12);
+  --radius: 2px;
+  --radius-pill: 2px;
+  --font-display: "Barlow Condensed", "Arial Narrow", sans-serif;
+  --font-body: "Source Sans 3", "Roboto", system-ui, sans-serif;
+  --header-bg: rgba(253, 246, 238, 0.94);
+  --hero-overlay: linear-gradient(to top, rgba(81, 43, 43, 0.88) 0%, rgba(81, 43, 43, 0.4) 45%, rgba(255, 95, 0, 0.12) 100%);
+  --highlight-icon-bg: rgba(255, 95, 0, 0.1);
+  --cta-shadow: 0 8px 24px rgba(255, 95, 0, 0.35);
+  --contact-gradient: linear-gradient(180deg, #fbf3f7 0%, #f9dae9 100%);
+  --gallery-placeholder: #f9dae9;
+  --feature-card-bg: rgba(255, 255, 255, 0.06);
+  --feature-card-border: rgba(255, 255, 255, 0.12);
+  --feature-text-muted: rgba(253, 246, 238, 0.7);
+  --contact-btn-bg: #ff5f00;
+  --contact-btn-color: #ffffff;
+  --hero-cta-color: #ffffff;
+}
+
+/* Overview-style fact grid (like FB listing “Översikt”) */
+.hero-stats {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0;
+  border-left: 3px solid #d4b8a3;
+  background: rgba(255, 255, 255, 0.12);
+  padding: 0.25rem 0;
+  margin-bottom: 2rem;
+}
+
+.stat {
+  padding: 0.65rem 1rem;
+  border-right: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.stat:last-child {
+  border-right: none;
+}
+
+.stat-label {
+  order: -1;
+  font-family: var(--font-display);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.85;
+  margin-bottom: 0.2rem;
+}
+
+.stat-value {
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+.section-label {
+  color: var(--gold);
+  font-family: var(--font-display);
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.section-title,
+.hero h1,
+.logo-name,
+.logo-number {
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  text-transform: none;
+}
+
+.logo-name {
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.hero-badge {
+  background: rgba(255, 255, 255, 0.92);
+  color: #512b2b;
+  border: 1px solid rgba(49, 163, 174, 0.45);
+  border-radius: 2px;
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.hero-cta,
+.contact-btn {
+  border-radius: 2px;
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.hero-cta {
+  background: var(--accent);
+  color: #fff;
+  border: 2px solid var(--accent);
+}
+
+.hero-cta:hover {
+  background: #da590e;
+  border-color: #da590e;
+}
+
+.nav-links a {
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.nav-links a:hover {
+  color: var(--gold);
+}
+
+.highlight,
+.location-item {
+  box-shadow: none;
+  border: 1px solid var(--border);
+  border-radius: 2px;
+}
+
+.gallery-tab.active {
+  background: var(--accent);
+  color: #fff;
+  border-radius: 2px;
+}
+
+.contact-section {
+  color: var(--text);
+}
+
+.contact-section .section-label {
+  color: var(--gold) !important;
+}
+
+.contact-section .section-title,
+.contact-section p,
+.contact-price,
+.contact-note {
+  color: var(--text);
+}
+
+.contact-section p {
+  opacity: 1;
+}
+
+.contact-btn {
+  border-radius: 2px;
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  border: 2px solid var(--accent);
+}
+
+.contact-btn:hover {
+  background: #da590e;
+  border-color: #da590e;
+  color: #fff;
+}
+
+.contact-link {
+  color: var(--gold);
+  border-bottom: 2px solid #efb7b6;
+}
+
+.site-footer {
+  background: var(--accent);
+  color: #fff;
+  border-top: 2px solid #fdf6ee;
+}
+
+.features-section {
+  background: var(--bg-dark);
+}
+
+@media (max-width: 900px) {
+  .hero-stats {
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    border-left: 3px solid #d4b8a3;
+    padding: 0.25rem 0;
+  }
+
+  .stat {
+    padding: 0.65rem 1rem;
+    border-right: 1px solid rgba(255, 255, 255, 0.15);
+  }
+
+  .stat:nth-child(2n) {
+    border-right: none;
+  }
+}

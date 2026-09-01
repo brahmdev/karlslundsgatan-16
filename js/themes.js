@@ -29,6 +29,12 @@ const THEMES = {
     desc: "High-contrast black, white & red",
     swatch: ["#ffffff", "#d62828", "#111111"],
   },
+  fastighetsbyran: {
+    name: "Fastighetsbyrån",
+    css: "css/themes/fastighetsbyran.css",
+    desc: "Broker listing look — cream, orange & brown",
+    swatch: ["#fdf6ee", "#ff5f00", "#512b2b"],
+  },
 };
 
 function getThemeId() {
