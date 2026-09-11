@@ -160,26 +160,14 @@ window.GALLERY_DATA =
       "description": "Comfortable bedroom with natural light",
       "images": [
         {
-          "src": "images/bedroom-1/IMG_2451.jpg",
-          "thumb": "images/bedroom-1/thumbs/IMG_2451.jpg",
+          "src": "images/bedroom-1/IMG_2512.jpg",
+          "thumb": "images/bedroom-1/thumbs/IMG_2512.jpg",
           "alt": "Bedroom 1"
         }
 ,
         {
-          "src": "images/bedroom-1/IMG_2452.jpg",
-          "thumb": "images/bedroom-1/thumbs/IMG_2452.jpg",
-          "alt": "Bedroom 1"
-        }
-,
-        {
-          "src": "images/bedroom-1/IMG_2456.jpg",
-          "thumb": "images/bedroom-1/thumbs/IMG_2456.jpg",
-          "alt": "Bedroom 1"
-        }
-,
-        {
-          "src": "images/bedroom-1/IMG_2459.jpg",
-          "thumb": "images/bedroom-1/thumbs/IMG_2459.jpg",
+          "src": "images/bedroom-1/IMG_2513.jpg",
+          "thumb": "images/bedroom-1/thumbs/IMG_2513.jpg",
           "alt": "Bedroom 1"
         }
 
