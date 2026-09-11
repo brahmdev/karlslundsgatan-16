@@ -2,7 +2,7 @@ let galleryData = null;
 let currentImages = [];
 let currentIndex = 0;
 
-/** Desired gallery order (bathroom is a placeholder until photos exist) */
+/** Desired gallery order */
 const CATEGORY_ORDER = [
   "hallway",
   "living-room",
@@ -39,27 +39,14 @@ function orderedCategories() {
     (galleryData.categories || []).map((c) => [c.id, c])
   );
 
-  return CATEGORY_ORDER.map((id) => {
-    if (id === "bathroom" && !byId.bathroom) {
-      return {
-        id: "bathroom",
-        title: "Bathroom",
-        description: "Minor bathroom updates completed — photos coming soon",
-        images: [],
-        comingSoon: true,
-      };
-    }
-    return byId[id];
-  }).filter(Boolean);
+  return CATEGORY_ORDER.map((id) => byId[id]).filter(Boolean);
 }
 
 function createTab(cat, isActive) {
   const tab = document.createElement("button");
   tab.type = "button";
-  tab.className = `gallery-tab${isActive ? " active" : ""}${
-    cat.comingSoon ? " coming-soon" : ""
-  }`;
-  tab.textContent = cat.comingSoon ? `${cat.title} · Soon` : cat.title;
+  tab.className = `gallery-tab${isActive ? " active" : ""}`;
+  tab.textContent = cat.title;
   tab.dataset.target = cat.id;
   tab.addEventListener("click", () => switchTab(cat.id));
   return tab;
@@ -88,12 +75,11 @@ function setupGallery() {
     panel.className = `gallery-panel${i === 0 ? " active" : ""}`;
     panel.id = `panel-${cat.id}`;
 
-    if (cat.comingSoon || !cat.images?.length) {
+    if (!cat.images?.length) {
       panel.innerHTML = `
         <div class="coming-soon-panel">
-          <div class="icon">🚿</div>
-          <h3>Bathroom photos coming soon</h3>
-          <p>Minor bathroom updates have been completed. Professional photos will be added shortly — call for a private viewing in the meantime.</p>
+          <h3>Photos coming soon</h3>
+          <p>Call for a private viewing in the meantime.</p>
         </div>`;
     } else {
       const desc = document.createElement("p");

@@ -104,6 +104,7 @@ process_folder "Living room" "living-room" "Living Room" "Spacious living area w
 process_folder "Kitchen" "kitchen" "Kitchen" "Brand new kitchen with modern finishes"
 process_folder "Bedroom-1" "bedroom-1" "Bedroom 1" "Comfortable bedroom with natural light"
 process_folder "Bedroom-2" "bedroom-2" "Bedroom 2" "Versatile second bedroom"
+process_folder "Bathroom" "bathroom" "Bathroom" "Minor bathroom updates completed"
 process_folder "Outside view" "views" "Views" "Panoramic open views from the 9th floor – east and north"
 
 if [ -z "$HERO_PATH" ]; then

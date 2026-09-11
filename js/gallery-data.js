@@ -217,6 +217,19 @@ window.GALLERY_DATA =
       ]
     },
     {
+      "id": "bathroom",
+      "title": "Bathroom",
+      "description": "Minor bathroom updates completed",
+      "images": [
+        {
+          "src": "images/bathroom/IMG_2511.jpg",
+          "thumb": "images/bathroom/thumbs/IMG_2511.jpg",
+          "alt": "Bathroom"
+        }
+
+      ]
+    },
+    {
       "id": "views",
       "title": "Views",
       "description": "Panoramic open views from the 9th floor – east and north",

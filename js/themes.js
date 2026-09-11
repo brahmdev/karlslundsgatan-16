@@ -1,4 +1,10 @@
 const THEMES = {
+  nordic: {
+    name: "Nordic",
+    css: "css/themes/nordic.css",
+    desc: "Pale ice blue & Scandinavian minimal",
+    swatch: ["#f4f7f9", "#5b7c99", "#2c3e50"],
+  },
   classic: {
     name: "Classic",
     css: "css/themes/classic.css",
@@ -10,12 +16,6 @@ const THEMES = {
     css: "css/themes/midnight.css",
     desc: "Deep navy with cool teal accents",
     swatch: ["#0f1419", "#4ecdc4", "#1a222d"],
-  },
-  nordic: {
-    name: "Nordic",
-    css: "css/themes/nordic.css",
-    desc: "Pale ice blue & Scandinavian minimal",
-    swatch: ["#f4f7f9", "#5b7c99", "#2c3e50"],
   },
   sunset: {
     name: "Sunset",
@@ -29,21 +29,23 @@ const THEMES = {
     desc: "High-contrast black, white & red",
     swatch: ["#ffffff", "#d62828", "#111111"],
   },
-  fastighetsbyran: {
-    name: "Fastighetsbyrån",
-    css: "css/themes/fastighetsbyran.css",
+  orange: {
+    name: "Orange",
+    css: "css/themes/orange.css",
     desc: "Broker listing look — cream, orange & brown",
     swatch: ["#fdf6ee", "#ff5f00", "#512b2b"],
   },
 };
 
+const DEFAULT_THEME = "nordic";
+
 function getThemeId() {
   const param = new URLSearchParams(window.location.search).get("theme");
-  return THEMES[param] ? param : "classic";
+  return THEMES[param] ? param : DEFAULT_THEME;
 }
 
 function applyTheme(id) {
-  const theme = THEMES[id] || THEMES.classic;
+  const theme = THEMES[id] || THEMES[DEFAULT_THEME];
   const link = document.getElementById("theme-css");
   if (link) link.href = theme.css;
   document.documentElement.dataset.theme = id;
@@ -63,7 +65,7 @@ function setupThemeSwitcher() {
   select.value = getThemeId();
   select.addEventListener("change", () => {
     const url = new URL(window.location.href);
-    if (select.value === "classic") url.searchParams.delete("theme");
+    if (select.value === DEFAULT_THEME) url.searchParams.delete("theme");
     else url.searchParams.set("theme", select.value);
     window.location.href = url.toString();
   });
